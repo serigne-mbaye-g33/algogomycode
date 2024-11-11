@@ -1,0 +1,39 @@
+ALGORITHM algorithm_name
+VAR
+longueur_phrase:INTEGER
+nombre_de_mots:INTEGER
+voyelles:INTEGER
+BEGIN
+
+    // Initialisation des compteurs
+    Longueur <- 0
+    NombreDeMots <- 0
+    NombreDeVoyelles <- 0
+    
+    // Lecture de la phrase caractère par caractère
+    WHILE true DO
+        lire caractère
+        
+        if caractère = '.' 
+            FOR 
+            Sortir de la boucle
+        END FOR
+
+        Longueur <- Longueur + 1
+          if caractère = 'a' ou caractère = 'e' ou caractère = 'i' ou
+            caractère = 'o' ou caractère = 'u' ou  caractère = 'o'
+           caractère = 'A' ou caractère = 'E' ou caractère = 'I' ou caractère = 'O' ou caractère = 'U' Alors
+            NombreDeVoyelles <- NombreDeVoyelles + 1
+        END if
+        
+        if caractère = ' ' Alors
+            NombreDeMots <- NombreDeMots + 1
+        END if
+    END WHILE true DO
+    
+    Nombre_De_Mots <- Nombre_De_Mots + 1
+    
+    Afficher "Longueur de la phrase: " & Longueur
+    Afficher "Nombre de mots: " & Nombre_De_Mots
+    Afficher "Nombre de voyelles: " & Nombre_De_Voyelles
+END
